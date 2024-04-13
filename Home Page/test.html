@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Place Details</title>
+    <link rel="stylesheet" href="place_details.css"> <!-- Link to your CSS file for styling -->
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+.place-details {
+    max-width: 600px;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#place-name {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+#parking-info {
+    color: #666;
+    font-size: 16px;
+}
+
+    </style>
+<body>
+    <div class="place-details">
+        <h2 id="place-name">Place Name</h2>
+        <p id="parking-info">Parking Information</p>
+        <!-- You can add more details here as needed -->
+    </div>
+    
+        <script>
+        // Function to get query parameter from URL
+        function getQueryParam(param) {
+            const urlParams = new URLSearchParams(window.location.search);
+            return urlParams.get(param);
+        }
+
+        // Get the searched place name from the query parameter
+        const searchedPlace = getQueryParam('place');
+
+        // Populate the place name in the HTML
+        const placeNameElement = document.getElementById('place-name');
+        placeNameElement.textContent = searchedPlace;
+
+    </script>
+</body>
+</html>

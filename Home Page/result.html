@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Result</title>
+    <link rel="stylesheet" href="result.css">
+    
+</head>
+<body>
+    <nav class="navbar navbar-dark bg dark">
+    </nav>
+    <div class="container mt-5">
+        <div class="card">
+            <div class="row">
+                <div class="col-md=4">
+                    <img src="parking1.webp" class="img-fluid" width="300" height="205">
+                </div>
+                <div class="col-md-8">
+                   <div class="heading"><h1 id="placeName">Rithala Metro Station</h1></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        // Get the <h1> element
+        const h1Element = document.getElementById('placeName');
+
+        // Add click event listener to the <h1> element
+        h1Element.addEventListener('click', function() {
+            // Navigate to "frontend/booking.html"
+            window.location.href = '../Automated_Parking-ishan/frontend/booking.html';
+        });
+
+        function getQueryParam(param) {
+            const urlParams = new URLSearchParams(window.location.search);
+            return urlParams.get(param);
+        }
+
+        // Get the searched place name from the query parameter
+        const searchedPlace = getQueryParam('place');
+
+        // Populate the place name in the HTML
+        const placeNameElement = document.getElementById('placeName');
+        placeNameElement.textContent = searchedPlace;
+    </script>
+</body>
+</html>

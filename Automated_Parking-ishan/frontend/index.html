@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login And Registration Form - Easy Tutorials</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="hero">
+        <div class="form-box">
+            <div class="button-box">
+                <div id="btn"></div>
+                <button type="button" class="toggle-btn" id="loginBtn">Log In</button>
+                <button type="button" class="toggle-btn" id="registerBtn">Register</button>
+            </div>
+            <form id="loginForm" class="input-group" style="left: 50px;">
+                <input type="text" class="input-field" id="loginUserId" placeholder="Email" required>
+                <input type="password" class="input-field" id="loginPassword" placeholder="Password" required>
+                <button type="submit" class="submit-btn">Log In</button>
+            </form>
+            <form id="registerForm" class="input-group" style="left: 450px;">
+                <input type="text" class="input-field" id="registerUserId" placeholder="Username" required>
+                <input type="email" class="input-field" id="registerEmail" placeholder="Email" required>
+                <input type="password" class="input-field" id="registerPassword" placeholder="Password" required>
+                <button type="submit" class="submit-btn">Register</button>
+            </form>
+        </div>
+    </div>
+
+    <div id="thankYouPage" style="display: none; background-color: white;">
+        <h2>Thank you for logging in!</h2>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

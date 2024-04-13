@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>Ticket Booking</title>
+    <!-- Google Fonts and Icons -->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Round|Material+Icons+Sharp|Material+Icons+Two+Tone"
+      rel="stylesheet"
+    />
+    <link
+      rel="preconnect"
+      href="https://fonts.googleapis.com"
+    />
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="booking.css" />
+  </head>
+  <body>
+    <div class="center">
+      <div class="tickets">
+        <div class="ticket-selector">
+          <div class="head">
+            <div class="title">Metro Parking</div>
+          </div>
+          <div class="seats">
+            <div class="status">
+              <div class="item">Available</div>
+              <div class="item">Booked</div>
+              <div class="item">Selected</div>
+            </div>
+            <div class="all-seats">
+              <!-- Seats will be dynamically added here -->
+            </div>
+          </div>
+          <div class="timings">
+            <!-- Optional: Add any timing information here -->
+          </div>
+        </div>
+        <div class="price">
+          <div class="total">
+            <span><span class="count">0</span> Tickets</span>
+            <div class="amount">0</div>
+          </div>
+          <button id="bookButton" type="button">Book</button>
+        </div>
+      </div>
+    </div>
+    <script src="booking.js" defer></script>
+  </body>
+</html>

@@ -1,0 +1,104 @@
+body {
+       height: 600px;
+       width: 100%;
+       font-family: sans-serif;
+       margin: 0;
+       padding: 0;
+       font-weight: bold; /* Makes all text bold */
+       display: flex;
+       align-items: center;
+       justify-content: center;
+   }
+   
+   .receipt-container {
+       width: 450px;
+       margin: 0 auto; /* Centers the container horizontally */
+       padding: 20px;
+       border: 1px solid black;
+       border-radius: 5px;
+   }
+   
+   .receipt-header {
+       text-align: center;
+   }
+   
+   .receipt-title {
+       font-size: 28px; /* Increased font size for title */
+       margin-bottom: 15px;
+   }
+   
+   .receipt-body {
+       line-height: 1.5;
+   }
+   
+   .receipt-details p {
+       font-weight: bold; /* Makes receipt details bold */
+       margin-bottom: 5px;
+   }
+   
+   .receipt-items {
+       margin-bottom: 15px;
+   }
+   
+   .receipt-table {
+       width: 100%;
+       border-collapse: collapse;
+       border: 1.3px solid black; /* Black border for the entire table */
+   }
+   
+   .receipt-table-header,
+   .receipt-table-data {
+       padding: 10px; /* Increased padding for more space between items */
+       border: 1px solid #ddd;
+   }
+   
+   .receipt-table-header {
+       font-weight: bold;
+       text-align: left;
+   }
+   
+   .receipt-table tr:nth-child(odd) {
+       background-color: #f5f5f5; /* Alternating row background colors */
+   }
+   
+   .receipt-table tr:nth-child(even) {
+       background-color: #fff;
+   }
+   
+   .receipt-total {
+       text-align: right;
+       display: flex;
+       justify-content: center;
+   }
+   
+   .receipt-total-label {
+       font-weight: bold;
+   }
+   
+   .receipt-tracking {
+       margin-top: 15px;
+       text-align: center;
+   }
+   
+   .receipt-tracking-label {
+       font-weight: bold;
+       margin-bottom: 5px;
+   }
+   
+   .receipt-tracking-status {
+       display: flex;
+       justify-content: space-between;
+   }
+   
+   .receipt-tracking-status p {
+       background-color: #ddd;
+       padding: 5px 10px;
+       border-radius: 5px;
+   }
+   .pay_status{
+       width: auto;
+       display: flex;
+       justify-content: center;
+       font-size: large;
+       border: 1px solid black;
+   }

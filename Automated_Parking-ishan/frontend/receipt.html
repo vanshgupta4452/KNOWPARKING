@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Parking Receipt</title>
+  <link rel="stylesheet" href="receipt.css">
+</head>
+<body>
+  <div class="receipt-container">
+    <div class="receipt-header">
+      <h1 class="receipt-title">Parking Receipt</h1>
+    </div>
+    <div class="receipt-body">
+      <div class="receipt-details">
+        <p class="receipt-date">Date: <span id="receipt-date"></span></p>
+        <p class="receipt-order-number">Parking Number: <span id="receipt-parking-number"></span></p>
+        <p class="receipt-order-number">Parking Place: <span id="receipt-parking-place"></span></p>
+        <p class="receipt-order-number">Rent: <span id="receipt-rent"></span></p>
+      </div>
+      <div class="receipt-total">
+        <p class="receipt-total-label">Total: <span id="receipt-total"></span></p>
+      </div>
+    </div>
+  </div>
+
+  <script src="receipt.js"></script>
+</body>
+</html>

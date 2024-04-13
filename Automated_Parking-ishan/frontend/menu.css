@@ -1,0 +1,44 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+  
+.menu-container {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+}
+  
+.menu-options {
+    margin-top: 20px;
+}
+  
+.menu-options a {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+  
+.menu-options a:hover {
+    background-color: #0056b3;
+}
+  
+#logoutBtn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+  
+#logoutBtn:hover {
+    background-color: #c82333;
+}
+  
